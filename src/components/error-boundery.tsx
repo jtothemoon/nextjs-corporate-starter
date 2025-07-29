@@ -2,6 +2,7 @@
 
 import { ErrorBoundary } from 'react-error-boundary'
 import { Button } from '@/components/ui/button'
+import { logger } from '@/lib/logger'
 
 function ErrorFallback({
   error,
@@ -38,7 +39,14 @@ export function AppErrorBoundary({ children }: { children: React.ReactNode }) {
     <ErrorBoundary
       FallbackComponent={ErrorFallback}
       onError={(error, errorInfo) => {
-        console.error('Error caught by boundary:', error, errorInfo)
+        // Logger를 사용하여 에러 로깅 (ESLint 워닝 해결)
+        logger.error('Error caught by boundary', error, {
+          componentStack: errorInfo.componentStack || 'unknown',
+          url: typeof window !== 'undefined' ? window.location.href : 'unknown',
+          userAgent:
+            typeof window !== 'undefined' ? navigator.userAgent : 'unknown',
+          errorBoundary: true,
+        })
       }}
     >
       {children}

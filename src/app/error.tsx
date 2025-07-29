@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react'
 import { Button } from '@/components/ui/button'
+import { logger } from '@/lib/logger'
 
 export default function Error({
   error,
@@ -11,7 +12,12 @@ export default function Error({
   reset: () => void
 }) {
   useEffect(() => {
-    console.error(error)
+    // Logger를 사용하여 에러 로깅 (ESLint 워닝 해결)
+    logger.error('Page error occurred', error, {
+      digest: error.digest,
+      url: typeof window !== 'undefined' ? window.location.href : 'unknown',
+      timestamp: new Date().toISOString(),
+    })
   }, [error])
 
   return (
