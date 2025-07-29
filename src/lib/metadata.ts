@@ -108,9 +108,9 @@ export const pageMetadata = {
   about: {
     title: '회사소개',
     description:
-      '자몽IT의 비전과 미션, 그리고 우리가 걸어온 길을 소개합니다. 공공과 기업을 잇는 디지털 브릿지 역할을 하는 IT 전문기업입니다.',
+      'company의 비전과 미션, 그리고 우리가 걸어온 길을 소개합니다. 공공과 기업을 잇는 디지털 브릿지 역할을 하는 IT 전문기업입니다.',
     url: '/about',
-    keywords: ['회사소개', '자몽IT', 'IT 기업', '비전', '미션'] as string[],
+    keywords: ['회사소개', 'company', 'IT 기업', '비전', '미션'] as string[],
   },
 
   services: {
@@ -130,7 +130,7 @@ export const pageMetadata = {
   portfolio: {
     title: '포트폴리오',
     description:
-      '자몽IT가 수행한 다양한 프로젝트 사례를 확인해보세요. 공공기관과 기업 대상의 성공적인 프로젝트 경험을 보유하고 있습니다.',
+      'company가 수행한 다양한 프로젝트 사례를 확인해보세요. 공공기관과 기업 대상의 성공적인 프로젝트 경험을 보유하고 있습니다.',
     url: '/portfolio',
     keywords: [
       '포트폴리오',
@@ -143,7 +143,7 @@ export const pageMetadata = {
   team: {
     title: '팀',
     description:
-      '자몽IT의 전문성 있는 팀원들을 소개합니다. 다양한 분야의 전문가들이 모여 최고의 IT 솔루션을 제공합니다.',
+      'company의 전문성 있는 팀원들을 소개합니다. 다양한 분야의 전문가들이 모여 최고의 IT 솔루션을 제공합니다.',
     url: '/team',
     keywords: ['팀 소개', 'IT 전문가', '개발팀', '기술진'] as string[],
   },
@@ -151,7 +151,7 @@ export const pageMetadata = {
   contact: {
     title: '연락처',
     description:
-      '자몽IT와 함께할 프로젝트가 있다면 언제든 연락주세요. 무료 상담을 통해 최적의 솔루션을 제안해드립니다.',
+      'company와 함께할 프로젝트가 있다면 언제든 연락주세요. 무료 상담을 통해 최적의 솔루션을 제안해드립니다.',
     url: '/contact',
     keywords: ['연락처', '상담 신청', '프로젝트 문의', '견적 요청'] as string[],
   },
@@ -168,20 +168,20 @@ export function createOrganizationSchema() {
     logo: `${SITE_CONFIG.url}/images/logo.png`,
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+82-10-6580-7890',
+      telephone: '+82-10-1234-5678',
       contactType: 'customer service',
       areaServed: 'KR',
       availableLanguage: 'Korean',
     },
     address: {
       '@type': 'PostalAddress',
-      addressLocality: '광주광역시',
-      addressRegion: '동구',
-      streetAddress: '동계천로 76',
+      addressLocality: '전라남도',
+      addressRegion: '나주시',
+      streetAddress: '',
       addressCountry: 'KR',
     },
-    foundingDate: '2018',
-    numberOfEmployees: '10-50',
+    foundingDate: '2025',
+    numberOfEmployees: '',
     knowsAbout: SITE_CONFIG.keywords,
   }
 }

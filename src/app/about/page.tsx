@@ -11,7 +11,7 @@ export default function AboutPage() {
         <div className="mb-16 text-center">
           <h1 className="mb-4 text-4xl font-bold">회사 소개</h1>
           <p className="text-xl text-gray-600">
-            공공과 기업을 잇는 디지털 브릿지, 자몽IT입니다
+            공공과 기업을 잇는 디지털 브릿지, company 입니다
           </p>
         </div>
 
@@ -41,7 +41,7 @@ export default function AboutPage() {
           <div className="space-y-6">
             <div className="border-l-4 border-blue-500 pl-6">
               <div className="text-lg font-semibold">2018년</div>
-              <div className="text-gray-600">자몽IT 설립</div>
+              <div className="text-gray-600">company 설립</div>
             </div>
             <div className="border-l-4 border-blue-500 pl-6">
               <div className="text-lg font-semibold">2019년</div>

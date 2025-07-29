@@ -1,5 +1,3 @@
-// 자몽IT 사이트 설정 및 상수
-
 import { companyInfo, contactInfo } from '@/content/data'
 
 // ============= 사이트 기본 설정 =============
@@ -7,7 +5,7 @@ export const SITE_CONFIG = {
   name: companyInfo.name,
   description: companyInfo.description,
   url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
-  domain: 'jamong.it.kr',
+  domain: 'company.it.kr',
   author: companyInfo.name,
   keywords: [
     'IT 솔루션',
@@ -30,16 +28,16 @@ export const CONTACT_INFO = {
   address: contactInfo.address,
   businessHours: contactInfo.businessHours,
   // 추가 연락처 정보
-  kakao: 'jamong_it', // 카카오톡 채널 (옵션)
-  linkedin: 'jamong-it', // 링크드인 (옵션)
+  kakao: 'company', // 카카오톡 채널 (옵션)
+  linkedin: 'company', // 링크드인 (옵션)
 } as const
 
 // ============= 소셜 미디어 =============
 export const SOCIAL_LINKS = {
   // 필요시 추가
-  // facebook: 'https://facebook.com/jamongit',
-  // instagram: 'https://instagram.com/jamongit',
-  // youtube: 'https://youtube.com/@jamongit'
+  // facebook: 'https://facebook.com/company',
+  // instagram: 'https://instagram.com/company',
+  // youtube: 'https://youtube.com/@company'
 } as const
 
 // ============= 기술 스택 =============

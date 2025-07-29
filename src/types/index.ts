@@ -43,6 +43,7 @@ export type ServiceCategory =
   | 'operation' // 운영 관리
   | 'iot' // IoT 솔루션
   | 'support' // 기술 지원
+  | 'data-analysis' // 데이터 분석
 
 // ============= 프로젝트/포트폴리오 관련 =============
 export interface Project extends BaseEntity {
